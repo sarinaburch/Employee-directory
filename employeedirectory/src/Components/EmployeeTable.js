@@ -1,4 +1,5 @@
 import React from "react";
+import Table from "./Table";
 
 const styles = {
     navbar: {
@@ -55,6 +56,9 @@ function EmployeeTable() {
     </div>
   </div>
 </section>
+<div>
+    <Table />
+</div>
 </div>
     )
 }

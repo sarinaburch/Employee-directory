@@ -1,11 +1,10 @@
-import Reacht, { Component } from "react";
+import React from "react";
 
 
-
-const Employees = (props) => {
+function Table() {
     return (
         <div>
-            <table className="empTable">
+            <table class="table-container table is-fullwidth is-hoverable">
                 <thead>
                     <tr>
                         <th>First Name</th>
@@ -16,27 +15,27 @@ const Employees = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                      {props.Employees.map((person) => {
-                          return <td key= {person.id} className="list-group-item">{person.first}</td>
-                      })}
-                      {props.Employees.map((person) => {
-                          return <td key= {person.id} className="list-group-item">{person.last}</td>
-                      })}
-                      {props.Employees.map((person) => {
-                          return <td key= {person.id} className="list-group-item">{person.email}</td>
-                      })}
-                      {props.Employees.map((person) => {
-                          return <td key= {person.id} className="list-group-item">{person.phone}</td>
-                      })}
-                      {props.Employees.map((person) => {
-                          return <td key= {person.id} className="list-group-item">{person.location}</td>
-                      })}
-                  </tr>  
+                    <tr>
+                 {/*      {props.Employees.map((person) => {
+                            return <td key={person.id} className="list-group-item">{person.props.first}</td>
+                        })}
+                        {props.Employees.map((person) => {
+                            return <td key={person.id} className="list-group-item">{person.props.last}</td>
+                        })}
+                        {props.Employees.map((person) => {
+                            return <td key={person.id} className="list-group-item">{person.props.email}</td>
+                        })}
+                        {props.Employees.map((person) => {
+                            return <td key={person.id} className="list-group-item">{person.props.phone}</td>
+                        })}
+                        {props.Employees.map((person) => {
+                            return <td key={person.id} className="list-group-item">{person.props.location}</td>
+                        })} */}
+                    </tr>
                 </tbody>
             </table>
         </div>
-    );
-};
+    )
+}
 
-export default Employees;
+export default Table;

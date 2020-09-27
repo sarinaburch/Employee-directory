@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import { person } from "../Utils/API";
+import EmployeeTable from './Components/EmployeeTable'
+
 
 function App() {
-  return <Employees />;
+  return <EmployeeTable />;
 }
 
 export default App;
