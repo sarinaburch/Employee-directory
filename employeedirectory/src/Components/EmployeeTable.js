@@ -18,41 +18,41 @@ const styles = {
 function EmployeeTable() {
     return (
         <div>
-        <nav style={styles.navbar} class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
+        <nav style={styles.navbar} className="navbar" role="navigation" aria-label="main navigation">
+  <div className="navbar-brand">
   {/* eslint-disable-next-line*/}
     <a>
       <img src="ArchieHead.jpg" alt="logo" width="115" height="115" />
     </a>
 {/* eslint-disable-next-line*/}
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
+    <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="navbarBasicExample" className="navbar-menu">
       
-    <div class="navbar-start">
+    <div className="navbar-start">
         {/* eslint-disable-next-line*/}
-      <a class="navbar-item" style={styles.nameFont}>
+      <a className="navbar-item" style={styles.nameFont}>
         Archie Industries</a>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
+    <div className="navbar-end">
+      <div className="navbar-item">
       </div>
     </div>
   </div>
 </nav>
-<section class="hero is-light">
-  <div class="hero-body ">
-    <div class="container has-text-centered ">
-      <h1 class="title">
+<section className="hero is-light">
+  <div className="hero-body ">
+    <div className="container has-text-centered ">
+      <h1 className="title">
         Employee Directory
       </h1>
-      <input class="input is-rounded is-normal" type="text" placeholder="Search Employee By Name" />
+      <input className="input is-rounded is-normal" type="text" placeholder="Search Employee By Name" />
     </div>
   </div>
 </section>

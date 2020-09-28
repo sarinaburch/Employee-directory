@@ -1,38 +1,29 @@
 import React from "react";
+import Employees from "./EmployeeData";
+import persons from "../persons.json"
 
-
-function Table() {
+function Table(props) {
     return (
         <div>
-            <table class="table-container table is-fullwidth is-hoverable">
+            <table className="table-container table is-fullwidth is-hoverable scheme-main-bis">
                 <thead>
                     <tr>
+                        
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
                         <th>Phone</th>
-                        <th>Address</th>
+                        <th>Employee ID</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                 {/*      {props.Employees.map((person) => {
-                            return <td key={person.id} className="list-group-item">{person.props.first}</td>
-                        })}
-                        {props.Employees.map((person) => {
-                            return <td key={person.id} className="list-group-item">{person.props.last}</td>
-                        })}
-                        {props.Employees.map((person) => {
-                            return <td key={person.id} className="list-group-item">{person.props.email}</td>
-                        })}
-                        {props.Employees.map((person) => {
-                            return <td key={person.id} className="list-group-item">{person.props.phone}</td>
-                        })}
-                        {props.Employees.map((person) => {
-                            return <td key={person.id} className="list-group-item">{person.props.location}</td>
-                        })} */}
-                    </tr>
-                </tbody>
+                {persons.map(person => (
+                    <Employees
+                    first={person.first}
+                    last={person.last}
+                    email={person.email}
+                    phone={person.phone} 
+                    id={person.id} />
+                ))}
             </table>
         </div>
     )
