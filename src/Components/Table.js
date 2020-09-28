@@ -1,6 +1,6 @@
 import React from "react";
-import Employees from "./EmployeeData";
-import persons from "../persons.json"
+import PersonList from "./EmployeeData";
+
 
 function Table(props) {
     return (
@@ -8,7 +8,7 @@ function Table(props) {
             <table className="table-container table is-fullwidth is-hoverable scheme-main-bis">
                 <thead>
                     <tr>
-                        
+
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
@@ -16,14 +16,9 @@ function Table(props) {
                         <th>Employee ID</th>
                     </tr>
                 </thead>
-                {persons.map(person => (
-                    <Employees
-                    first={person.first}
-                    last={person.last}
-                    email={person.email}
-                    phone={person.phone} 
-                    id={person.id} />
-                ))}
+                
+                <PersonList />
+            
             </table>
         </div>
     )
